@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <link rel="stylesheet" href="/Impasto.html/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <title> website </title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Impasto</title>
+    <style>
+      body{
+        background-image: url("./right.png");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-attachment: scroll;
+      }
+      h1{ font-family: "Sofia", sans-serif;
+  font-size: 60px;
+  color: #81F5FF;}
+  
+
+.card {border-radius:50px;
+  border:#81F5FF;}
+p{color: #81F5FF;}
+h2{ color: #81F5FF;
+text-shadow: 15px color(black);}
+
+ 
+    </style>
+</head>
+<body>
+    
+<section>
+    <div class=" text-center overflow-hidden">
+      
+        <div class="my-3 py-3 shadow-sm">
+          <h1>Cake Pop</h1>
+          <p>Sweet, Succulent , Decadent.</p>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <a href="./cakes.html">
+              <button class="btn  me-md-2 shadow-sm" type="button" style="background-color: #81F5FF; color: #fdf4f5;">Back</button>
+              </a>
+              <br><br>
+              </div>
+     
+      
+          <img src="C:\Users\23057\OneDrive - Polytechnics Mauritius Ltd\R.png" class="img-fluid w-20" alt=" Fudge Cakepop" width="500" height="500">
+       
+            
+            </div>
+            <br>
+            <div class="container-fluid">
+              <h2>Toppings Selection</h2>
+              <br>
+              <form  id="toppings-form" >
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+                    <div class="col-4">
+                        <div class="card shadow-lg">
+                            <label>
+                                <img src="C:\Users\23057\OneDrive - Polytechnics Mauritius Ltd\sprinkles-10.jpg" style="border-radius: 50px ;" alt=" Sprinkles" width="100" height="90">
+                                <input type="radio" name="topping" value="colourfulsprinkles"  onclick="calculateTotal()"> Colourful Sprinkles
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card shadow-lg">
+                          <label>
+                            <img src="C:\Users\23057\OneDrive - Polytechnics Mauritius Ltd\R.jpeg"  style="border-radius: 50px ;"alt=" Chocolate Sprinkles" width="100" height="90">
+                            
+                            <input type="radio" name="topping" value="chocaltesprinkles"onclick="calculateTotal()"> Chocolate Sprinkles
+                          </label>
+                          </div>
+                          </div>
+                          <div class="col-4">
+                            <div class="card shadow-lg">
+                          <label>
+                            <img src="C:\Users\23057\OneDrive - Polytechnics Mauritius Ltd\OIP (1).jpeg"style="border-radius: 50px ;" alt=" Pearl Sprinkles" width="100" height="90">
+                           
+                            <input type="radio" name="topping" value="pearlsprinkles"onclick="calculateTotal()"> Pearl Sprinkles
+                          </label>
+                          </div>
+                          </div>
+                          <div class="col-4">
+                            <div class="card shadow-lg">
+                          <label>
+                            <img src="C:\Users\23057\OneDrive - Polytechnics Mauritius Ltd\78-156021.jpg" style="border-radius: 50px ;" alt=" Flat Sprinkles" width="100" height="90">
+                            
+                            <input type="radio" name="topping" value="flatsprinkles"onclick="calculateTotal()"> Flat Sprinkles
+                          </label>
+                          </div>
+                          </div>
+                          <div class="col-4">
+                            <div class="card shadow-lg">
+                          <label>
+                            <img src="C:\Users\23057\OneDrive - Polytechnics Mauritius Ltd\1555407608-31365000.jpg" style="border-radius: 50px ;" alt=" Sugar Sprinkles" width="100" height="90">
+                            
+                            <input type="radio" name="topping" value="sugarsprinkles"onclick="calculateTotal()"> Sugar Sprinkles
+                          </label>
+                          </div>
+                          </div>
+                        </div>
+                  
+              
+            </form>
+            <div id="topping-images"></div>
+        </div>
+        <br><br>
+            <div class="container-fluid">
+              <h2>Chocolate Selection</h2>
+              <br>
+            <form id="chocolate-form">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4  g-4">
+              <div class="col-4">
+                <div class="card shadow-lg">
+              <label>
+                <img src="C:\Users\23057\OneDrive - Polytechnics Mauritius Ltd\R (4).jpeg" style="border-radius: 50px ;" alt=" whitechocolate" width="100" height="90">
+              
+                <input type="radio" name="chocolate" value=" whitechocolate" onclick="calculateTotal()"> White Chocolate 
+              </label>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card shadow-lg">
+              <label>
+                <img src="C:\Users\23057\OneDrive - Polytechnics Mauritius Ltd\OIP (4).jpeg" style="border-radius: 50px ;" alt=" milkchocolate" width="100" height="90">
+              
+                <input type="radio" name="chocolate" value=" milkchocolate"  onclick="calculateTotal()"> Milk Chocolate
+              </label>
+              </div>
+              </div>
+              <div class="col-4">
+                <div class="card shadow-lg">
+                  <label>
+                    <img src="C:\Users\23057\OneDrive - Polytechnics Mauritius Ltd\R (5).jpeg" style="border-radius: 50px ;" alt=" darkchocolate" width="100" height="90">
+                  
+                    <input type="radio" name="chocolate" value="darkchocolate"  onclick="calculateTotal()"> Dark Chocolate
+                  </label>
+              </div>
+              </div>
+              
+              
+              
+            </form>
+            <div id="chocolate-images"></div>
+            <br>
+            <form id="suggestion">
+              <h5>Other Suggestion ?</h5>
+              <div class="col-12">
+              <div class="input-group shadow-lg">
+                <div class="input-group-text">
+                  <input class="form-check-input mt-0" type="radio"  value="chocolatelab" aria-label="Radio button for following text input"  onclick="calculateTotal()" >
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="@example:PinkChocolate">
+              </div>
+              <p style="font-size: 10px;">*rs 40</p>
+            </form>
+          </div>
+            </div>
+            <br><br>
+            <div class="container-fluid">
+              <h2>Cake Flavours Selection</h2>
+              <br>
+              <form id="cakeflavours-form">
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+                      <div class="col-4">
+                          <div class="card shadow-lg">
+                              <label>
+                                  <img src="C:\Users\23057\OneDrive - Polytechnics Mauritius Ltd\R (7).jpeg" style="border-radius: 50px ;" alt=" vanilla Cake" width="100" height="90">
+                                  <input type="radio" name="cakeflavours" value="vanilla Cake"  onclick="calculateTotal()"> Vanilla Cake
+                              </label>
+                          </div>
+                      </div>
+                      <div class="col-4">
+                          <div class="card shadow-lg">
+                            <label>
+                              <img src="C:\Users\23057\OneDrive - Polytechnics Mauritius Ltd\OIP (5).jpeg" style="border-radius: 50px ;" alt=" chocolate cake" width="100" height="90">
+                            
+                              <input type="radio" name="cakeflavours" value="chocolate cake"> Chocolate Cake
+                            </label>
+                            </div>
+                            </div>
+              </div>              
+                      <!-- Add more cake flavor options here -->
+                  </div>
+              </form>
+              <div id="cakeflavours-images"></div>
+              <br>
+              <form>
+                <div class="container-fluid">
+                  <h5>Other Suggestion ?</h5>
+                  <div class="col-4">
+                      <div class="input-group shadow-lg">
+                          <div class="input-group-text">
+                              <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input"  onclick="calculateTotal()">
+                          </div>
+                          <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="@example:strawberry">
+                     </div>
+                     <p style="font-size: 10px;">*rs 30</p>
+                    </div>
+                  </form>
+              </div>
+          </div>
+          </div>
+          <br><br><br>
+          </section>
+          <div class="container-fluid">
+              <div class ="d-grid gap-2 col-6 justify-content-md-end">
+                  <div id="total-amount">
+                      <h3 style="color: #fdf4f5;">Total Amount</h3>
+                      <h4 style="color: #fdf4f5;">Rs 0</h4>
+                  </div>
+              </div>
+          </div>
+          <div class="container-fluid">
+              <div class="d-grid gap-2 col-12 justify-content-md-end">
+                  <a href="./checkout.html">
+                      <button class="btn shadow-sm " type="submit" style="background-color:#fdf4f5; color:#81F5FF;"> Add To Cart <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                  </svg></button></a>
+              </div>
+          </div>
+          
+          <script>
+              // Function to calculate and update the total amount
+          function calculateTotal() {
+              // Initialize the total amount
+              let totalAmount = 75; // Base price
+          
+              // Calculate the total amount based on selected options
+              const selectedTopping = document.querySelector('input[name="topping"]:checked');
+              if (selectedTopping) {
+                  const toppingValue = selectedTopping.value;
+                  // Add the price of the selected topping to the total
+                  if (toppingValue === "colourfulsprinkles") {
+                      totalAmount += 10; // Adjust the price as needed
+                  } else if (toppingValue === "chocaltesprinkles") {
+                      totalAmount += 15; // Adjust the price as needed
+                  } else if (toppingValue === "pearlsprinkles") {
+                      totalAmount += 20; // Adjust the price as needed
+                  } else if (toppingValue === "flatsprinkles") {
+                      totalAmount += 12; // Adjust the price as needed
+                  } else if (toppingValue === "sugarsprinkles") {
+                      totalAmount += 10; // Adjust the price as needed
+                  }
+              }
+          
+              const selectedChocolate = document.querySelector('input[name="chocolate"]:checked');
+              if (selectedChocolate) {
+                  const chocolateValue = selectedChocolate.value;
+                  // Add the price of the selected frosting to the total
+                  if (chocolateValue === "whitechocolate") {
+                      totalAmount += 30; // Adjust the price as needed
+                  } else if (chocolateValue === "milkchocolate") {
+                      totalAmount += 35; // Adjust the price as needed
+                  } else if (chocolateValue === "darkchocolate") {
+                      totalAmount += 40; // Adjust the price as needed
+                  }
+                 
+              }
+          
+              
+              const selectedCakeFlavour = document.querySelector('input[name="cakeflavours"]:checked');
+              if (selectedCakeFlavour) {
+                  const cakeFlavourValue = selectedCakeFlavour.value;
+                  // Add the price of the selected cake flavor to the total
+                  if (cakeFlavourValue === "vanilla Cake") {
+                      totalAmount += 25; // Adjust the price as needed
+                  } else if (cakeFlavourValue === "chocolate cake") {
+                      totalAmount += 30; // Adjust the price as needed
+                  }
+              }
+          
+              // Update the total amount on the webpage
+              const totalAmountElement = document.getElementById("total-amount");
+              if (totalAmountElement) {
+                  const totalAmountText = totalAmountElement.querySelector("h4");
+                  if (totalAmountText) {
+                      totalAmountText.textContent = "Rs " + totalAmount;
+                  }
+              }
+          }
+          
+          // Attach event listeners to the form elements to trigger the calculation
+          const toppingsForm = document.getElementById("toppings-form");
+          if (toppingsForm) {
+              toppingsForm.addEventListener("change", calculateTotal);
+          }
+          
+          const chocolateForm = document.getElementById("chocolate-form");
+          if (chocolateForm) {
+            chocolateForm.addEventListener("change", calculateTotal);
+          }
+          
+          const cakeFlavoursForm = document.getElementById("cakeflavours-form");
+          if (cakeFlavoursForm) {
+              cakeFlavoursForm.addEventListener("change", calculateTotal);
+          }
+          
+          
+          // Initial calculation
+          calculateTotal();
+          
+          </script>
+          </section>
+          <br><br>
+          <footer>
+              <p style="color:#fdf4f5;">&copy; 2023 Impasto. All rights reserved.</p>
+          </footer>
+          </body>
+          </html>
+          
